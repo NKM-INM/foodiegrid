@@ -1,0 +1,14 @@
+Tâche,Début,Fin
+Lock scope + backlog MVP,2025-08-28,2025-08-29
+Supabase project + Auth + SQL schema,2025-08-29,2025-08-30
+Seed anecdotes + générer 200 QR (CSV),2025-08-30,2025-08-31
+Front public: page anecdote + routage QR,2025-09-01,2025-09-03
+Intégration Auth + enregistrement read_events,2025-09-03,2025-09-05
+Crédit points + mini dashboard admin,2025-09-05,2025-09-06
+E2E tests fermés (20 QR) + fixes,2025-09-06,2025-09-09
+Textes légaux (CGU/Privacy) + Consent,2025-09-09,2025-09-11
+"Observabilité (logs, erreurs)",2025-09-11,2025-09-12
+Soft launch privé + feedback,2025-09-12,2025-09-14
+Code freeze + QA packaging QR,2025-09-15,2025-09-17
+Go/No-Go + rollback plan,2025-09-18,2025-09-18
+Déploiement final + check-lists,2025-09-19,2025-09-20
