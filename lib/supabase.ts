@@ -1,5 +1,9 @@
 // lib/supabase.ts
 import { createClient } from "@supabase/supabase-js";
+export const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
 // 🔎 Debug (temporaire) — pas de point à la fin de ligne !
 console.log("SUPABASE_URL =", process.env.NEXT_PUBLIC_SUPABASE_URL);
