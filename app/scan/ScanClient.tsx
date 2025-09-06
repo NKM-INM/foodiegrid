@@ -19,7 +19,7 @@ export default function ScanClient() {
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => setSession(data?.session ?? null));
   }, []);
-
+  
   useEffect(() => {
     async function load() {
       const { data, error } = await supabase.rpc("get_random_anecdote");
@@ -38,7 +38,7 @@ export default function ScanClient() {
     const { error } = await supabase.from("read_events").insert({ user_id, qr_id, anecdote_id: anecdote.anecdote_id });
     if (error) {
       if (String(error.message).toLowerCase().includes("duplicate")) setStatus("Déjà validée ✔️");
-      else { console.error(error); setStatus("Erreur validation"); }
+      else setStatus("Erreur validation : " + error.message); // 👈 affiche la cause exacte
       return;
     }
     setStatus("+5 points ajoutés ✔️");
@@ -64,3 +64,4 @@ export default function ScanClient() {
     </main>
   );
 }
+
