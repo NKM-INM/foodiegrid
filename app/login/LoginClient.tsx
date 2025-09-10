@@ -8,6 +8,7 @@ import { supabase } from "../../lib/supabase";
 export default function LoginClient() {
   const params = useSearchParams();
   const qr = params.get("qr");
+  const sig = params.get("sig");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
