@@ -11,6 +11,7 @@ export default function ScanClient() {
   const params = useSearchParams();
   const router = useRouter();
   const qr = params.get("qr");
+  const sig = params.get("sig");
 
   const [anecdote, setAnecdote] = useState<Anecdote | null>(null);
   const [status, setStatus] = useState("");
@@ -64,4 +65,5 @@ export default function ScanClient() {
     </main>
   );
 }
+
 
